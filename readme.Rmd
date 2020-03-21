@@ -8,7 +8,7 @@ output:
 
 Download the source file from [*Compile Hadley’s Advanced R to a PDF*](http://brettklamer.com/diversions/statistical/compile-hadleys-advanced-r-programming-to-a-pdf/). Install R Package dependencies using `devtools::install_github("hadley/sloop")` and `devtools::install_github("hadley/emo")`. Finanlly, use `bookdown::render_book("index.Rmd", output_format = "bookdown::pdf_book")` to compile the book.
 
-First of all, upgrade RStudio and installed packages to the latest version. During the building process, I've met several problems, most of them are package missing. The followings are the errors I've met and how I solved them. 
+First of all, upgrade RStudio and installed packages to the latest version. During the building process, I've met several problems. The followings are the errors I've met and how I solved them. 
   
   ## warning :you have install R 
 
@@ -35,4 +35,10 @@ when I open Rstudio to combile this book, Rstudio warning I donnot install R.But
 
   ## Quitting from lines 80-81 (Names-values.Rmd)
 
-  find your package 'rlang' in ../Rstudio/library, remove or drop it, and irenstall it.
+  find your package 'rlang' in ../Rstudio/library, remove or drop it, and reinstall it.
+
+  ##git clone https://github.com/hadley/adv-r.git
+
+  git clone have no problem. but when I do it in GitBush, it success install in fourth time. But do it with Rstudio just cost thirty seconds.
+
+  ##
