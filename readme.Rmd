@@ -1,0 +1,12 @@
+---
+title: "Problems and Solutions to Compile a PDF Version of Advanced R"
+author: "cheng-hongyuan"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+Download the source file from [*Compile Hadley’s Advanced R to a PDF*](http://brettklamer.com/diversions/statistical/compile-hadleys-advanced-r-programming-to-a-pdf/). Install R Package dependencies using `devtools::install_github("hadley/sloop")` and `devtools::install_github("hadley/emo")`. Finanlly, use `bookdown::render_book("index.Rmd", output_format = "bookdown::pdf_book")` to compile the book.
+
+First of all, upgrade RStudio and installed packages to the latest version. During the building process, I've met several problems, most of them are package missing. The followings are the errors I've met and how I solved them. 
+
