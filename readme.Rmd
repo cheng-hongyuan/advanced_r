@@ -13,3 +13,26 @@ First of all, upgrade RStudio and installed packages to the latest version. Duri
   ## warning :you have install R 
 
 when I open Rstudio to combile this book, Rstudio warning I donnot install R.But i had installed it two days ago. to solve tis problem. make sure two apps are installed in same file. lastly, open Rstudio use mannagerial authority
+
+  ##connect Rstudio with Git
+  open Rstudio ,click tools--global options,put you Git.exe into Git/VSN 
+
+  ##install R packages
+  In Rstudio, it alert updating loaded packages.at first, I click "yes" to run. had wrong.
+  last, click "no", it is finished.
+
+  ##'dplar'
+  the following objecrs are masked from 'package:stats':
+  filter, lag
+  the following objecrs are masked from 'package:stats':
+  intersect,setdiff,setequal,union
+
+  In Rstudio ,input  >library('dplyr')  and list information above. Then I input < suppressMessages(library('dplyr')) to remind Rstudi output wrong informations.
+  ## Quitting from lines 223-235 (Introduction.Rmd) 
+
+  open introduction.Rmd with Rstudio, reshape commend line in 234,add 'encodeing = "UTF-8"' in () 
+  change line 234 to > contributors <-read.csv("contributors.csv",stringsAsFactors = FALSE, encoding = "UTF-8")
+
+  ## Quitting from lines 80-81 (Names-values.Rmd)
+
+  find your package 'rlang' in ../Rstudio/library, remove or drop it, and irenstall it.
